@@ -11,6 +11,7 @@
         "laravel/framework": "^11.31",
         "laravel/helpers": "^1.8",
         "laravel/tinker": "^2.9",
+        "livewire/livewire": "^4.3",
         "maatwebsite/excel": "^3.1"
     },
     "require-dev": {

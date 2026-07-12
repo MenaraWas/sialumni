@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FormSchema;
 use Illuminate\Http\Request;
 
 class TracerPublicController extends Controller
 {
     public function landing(){
-        return view('tracer.landing');
+        $formActive = FormSchema::getActive() !== null;
+        return view('tracer.landing', compact('formActive'));
     }
 
     public function form(){
