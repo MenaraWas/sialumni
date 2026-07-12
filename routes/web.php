@@ -7,9 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tracer', function () {
-    return view('tracer.landing');
-})->name('tracer.landing');
 
 Route::prefix('tracer')->name('tracer.')->group(function () {
     

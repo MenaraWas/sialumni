@@ -13,6 +13,10 @@ class TracerPublicController extends Controller
     }
 
     public function form(){
+        $schema = FormSchema::getActive();
+        if(!$schema){
+            return redirect()->route('tracer.landing');
+        }
         return view('tracer.form');
     }
 
@@ -21,6 +25,6 @@ class TracerPublicController extends Controller
     }
 
     public function thankyou(){
-        return view('tracer.thankyou');
+        return view('tracer.thank-you');
     }
 }
