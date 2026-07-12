@@ -29,6 +29,6 @@ class AlumniVerification extends Model
 
     public function verifiedBy()
     {
-        return $this->belongsTo(User::class, 'verifiedby');
+        return $this->belongsTo(User::class, 'verified_by');
     }
 }
